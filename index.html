@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div id="introcontainer" class="fullscreen" style="display:block;">
+        <div id="bussa" class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <button id="btn-bussa" class="btn btn-light btn-lg btn-block" onclick="tocToc()">
+                        Bussa
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="entratacontainer" class="fullscreen" style="display:none;">
+        <div id="entrataoptionscontainer" class="container" style="display:none;">
+            <div class="row">
+                <div class="col text-center">
+                    <button id="btnVaiInSala" class="btn btn-success btn-lg btn-block mb-1" onclick="vaiInSala()">
+                        Vai in sala
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <button id="btnScappa" class="btn btn-danger btn-lg btn-block" onclick="scappa()">
+                        Scappa
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="salacontainer" class="fullscreen" style="display:none;">
+        <div id="bigliettocontainer" onclick="mostraBiglietto()">
+            <button id="biglietto"></button>
+        </div>
+        <div id="salaoptionscontainer" class="container" style="display: none;">
+            <div class="row">
+                <div class="col text-center">
+                    <button id="btnLeggiBiglietto" class="btn btn-success btn-lg btn-block mb-1" onclick="leggi()">
+                        Leggi il biglietto
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <button id="btnVaiInCamera" class="btn btn-success btn-lg btn-block mb-1" onclick="vaiInCamera()" style="display:none;">
+                        Vai in camera
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <button id="btnScappa2" class="btn btn-danger btn-lg btn-block" onclick="scappa()">
+                        Scappa
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cameracontainer" class="fullscreen" style="display:none;">
+        <div id="regalocontainer" onclick="mostraRegalo()">
+            <button id="regalo"></button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
