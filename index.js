@@ -6,7 +6,11 @@ var audio4 = new Audio("sound/awww.mp3");
 var audio5 = new Audio("sound/cheers.mp3");
 var audio6 = new Audio("sound/end.mp3");
 let person;
-var testoMessaggio = "Cara greta...";
+var testoMessaggio = "";
+fetch("messaggio.txt")
+.then((res) => res.text())
+.then((text) => {testoMessaggio = text;})
+
 
 var introcontainer = document.getElementById("introcontainer");
 var entratacontainer = document.getElementById("entratacontainer");
