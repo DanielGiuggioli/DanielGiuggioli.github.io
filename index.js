@@ -127,7 +127,7 @@ function vaiInCamera(){
 }
 
 function startGameCamera(){
-    window.alert("Come promesso le sorprese non sono finite...\nHo nascosto un'altro regalino qui in camera, vediamo se lo trovi");
+    window.alert("Come promesso le sorprese non sono finite...\nHo nascosto un altro regalino qui in camera, vediamo se lo trovi");
     clearTimeout(timeout);
 }
 
